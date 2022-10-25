@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./src/xsalert.js"></script>
+</head>
+
+<body>
+    <button id="btn">click</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $("#btn").click(() => {
+            let a = confirm("do you want to send request");
+            console.log(a);
+            if (a === true) {
+                $.ajax({
+                    url: "alert.js",
+                    type: "GET",
+                    beforeSend :function(){
+                        alert("do you send data");
+                    },
+                    success:function(result,sta){
+                        alert("success");
+                        console.log(result);
+                    },
+                    error :function(){
+                        alert("error");
+                    },
+                    statusCode :{
+                        404 : function(){alert("nhi mila")}
+                    }
+
+                });
+                // $(document).ajaxSuccess((event, jqxhr, plainobjec) => {
+                //     if (plainobjec.url === "alefgfdgrt.js") {
+
+                //         alert("ajax success");
+                //     }
+                // });
+                // $(document).ajaxError((event, jqxhr, plainobject) => {
+                //     if (plainobject.url === "alefgfdgrt.js") {
+
+                //         alert("error found");
+                //     } else {
+                //         alert("no error")
+                //     }
+                // });
+                // $(document).ajaxComplete(() => {
+                //     alert("complete");
+                // });
+            } else {
+                console.log("No");
+            }
+        });
+    });
+</script>
+
+</html>

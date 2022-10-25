@@ -1,0 +1,153 @@
+*{
+    margin:0 ;
+    padding: 0;
+    font-family: 'Roboto',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 0px;
+    line-height: 25px;
+    text-decoration: none solid rgb(0,0,0);
+    text-align: justify;
+    
+}
+h1{
+    display: inline;
+    color: #610B4B;
+    font-size: 22px;
+    vertical-align: middle;
+}
+.coursetype{
+    color: #610B4B;
+    font-size: 22px;
+    vertical-align: middle;
+
+}
+.link{
+    display: inline;
+    color: #4caf50;
+    font-size: 22px;
+    text-decoration: none;
+}
+.link:hover{
+    color: red;
+}
+
+body{
+    background-color: #F9F4F4;
+}
+.header{
+    width: 100%;
+    min-height: 50px;
+    display: grid;
+    grid-template-columns: 350px auto 300px;
+}
+
+#navbar{
+    width: 100%;
+    min-height: 50px;
+    background-color: #4caf50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav div{
+    padding: 10px;
+
+}
+
+nav div:hover{
+    background-color: #317c33;
+    color: white;
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;    
+}
+nav div a:hover{
+    text-decoration: none;
+    color: white;    
+}
+
+nav div a:link{
+    text-decoration: none;
+    color: white;    
+}
+
+/*************** main div with prijects ********/
+.main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#containermain{
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+
+}
+.box-shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.tutorial{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    min-height: 200px;
+    padding: 10px 0 0 10px;
+    
+    margin-left: 0px;
+}
+.every-tut{
+    width: 150px;
+    height: 150px;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.every-tut:hover{
+    width: 170px;
+    height: 170px;
+    z-index: 999;
+    background-color: antiquewhite;
+    transform: scale(1.5, 1);
+}
+
+
+.tutorial-side{
+    display: block;
+    width: 5%;
+    height: 5%;
+    background-color: #610B4B;
+}
+
+.teach{
+    min-height: 100px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    
+}
+
+
+
+
+/*************| containermain end |****/
+
+
+#artical{
+    min-height: 100%;
+    padding: 25px 0 0 90px;
+    overflow: auto;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+ol{
+    list-style-type: disc; 
+}
+
+ol li a{
+    color:#4caf50;
+    text-decoration: none;
+}
+

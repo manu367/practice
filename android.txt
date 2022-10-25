@@ -1,0 +1,37 @@
+button =
+tint
+backgroundTint
+fabsize="mini"
+ android :layout_centerHorizontal="true"
+ android :layout_centerVertical="true" //centerVertical
+android:layout centerInParent="true" // layout ke center me le kr aayega
+
+alignParentTop="true" // top wali se align ho jayega
+alignParentBottom="true" // bottom line ke alig ho jayega
+alignParentstart="true" // left align ke sath aa jayega
+alignParentend="true" //parent ke end ke sath align ho jayega (right)
+
+android:layout_above="uper wale view ke id"
+below
+layout_toEndOf
+toStartof
+
+
+_____________________EditText_______________
+inputType
+hint
+maxline=2 // visible only 2 lines
+maxLength
+
+_________autocomplete textview_________
+is an edittext where a user can tyep in any value ,or can ever setelect
+
+<autocompletetextview></<autocompletetextview> ==>
+hint
+
+<Multiautocompletetextview></Multiautocompletetextview> ==>
+
+
+_______________scrollView___________
+1.scrollview == height
+2.HorizontalScrollView ==width
